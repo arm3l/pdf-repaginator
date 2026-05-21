@@ -248,12 +248,13 @@
     margin-top: 0.5rem;
   }
 
-  .reassurance {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-    font-size: 13px;
-    color: var(--gold);
-    margin: 0.75rem 0 0;
+  .drop-zone .reassurance {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--staffd);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 1.4rem 0 0;
   }
 
   .controls {
@@ -843,7 +844,7 @@
     <div class="drop-zone" id="drop-zone">
       <p data-i18n-html="dropzone.title"><strong>Glisse un PDF ici</strong></p>
       <p class="status" id="status" data-i18n="dropzone.status">ou clique pour choisir un fichier</p>
-      <p class="reassurance" data-i18n="dropzone.reassurance">N'aie crainte, ton PDF original ne sera pas modifié.</p>
+      <p class="reassurance" data-i18n="dropzone.reassurance">Traitement 100 % local. PDF original préservé.</p>
     </div>
     <input type="file" id="file-input" accept="application/pdf">
   </div>
@@ -980,7 +981,7 @@
       'dropzone.title': '<strong>Glisse un PDF ici</strong>',
       'dropzone.status': 'ou clique pour choisir un fichier',
       'dropzone.status_default': 'ou clique pour choisir un fichier',
-      'dropzone.reassurance': 'N\'aie crainte, ton PDF original ne sera pas modifié.',
+      'dropzone.reassurance': 'Traitement 100 % local. PDF original préservé.',
       'loading.title': 'Lecture du PDF...',
       'loading.subtitle': 'Patiente quelques instants',
       'loading.init': 'Initialisation...',
@@ -1042,7 +1043,7 @@
       'dropzone.title': '<strong>Drop a PDF here</strong>',
       'dropzone.status': 'or click to pick a file',
       'dropzone.status_default': 'or click to pick a file',
-      'dropzone.reassurance': 'No worries — your original PDF stays untouched.',
+      'dropzone.reassurance': '100% local processing. Original PDF preserved.',
       'loading.title': 'Reading the PDF...',
       'loading.subtitle': 'Hang on a second',
       'loading.init': 'Initialising...',
