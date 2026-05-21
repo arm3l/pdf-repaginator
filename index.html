@@ -801,6 +801,19 @@
     font-size: 13px;
     margin-top: 0.5rem;
   }
+
+  .site-footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 2px solid var(--gold);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--staffd);
+    text-align: center;
+  }
+  .site-footer p { margin: 0; }
+  .site-footer a { color: var(--gold); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -934,6 +947,11 @@
       <button class="modal-close" id="modal-close-btn" data-i18n="modal.close">Fermer</button>
     </div>
   </div>
+
+  <footer class="site-footer">
+    <p><span data-i18n="footer.title">PDF Repaginator</span> — <span data-i18n="footer.built_by">built by</span> <a href="https://github.com/arm3l/pdf-repaginator" rel="noopener">arm3l</a></p>
+    <p style="margin-top:8px"><a href="https://arm3l.github.io/fbi-data/" rel="noopener" data-i18n="footer.fbi">Fake Book Index</a> · <a href="https://apps.apple.com/app/fake-book-index/id6769004225" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.fakebookindex" rel="noopener">Google Play</a></p>
+  </footer>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
@@ -951,6 +969,9 @@
   const I18N = {
     fr: {
       'brand.tool_link': 'A FBI tool',
+      'footer.fbi': 'Fake Book Index',
+      'footer.title': 'PDF Repaginator',
+      'footer.built_by': 'réalisé par',
       'header.title': 'PDF Repaginator',
       'header.subtitle': 'Étiquetage de pages pour scans de Real Books.',
       'intro.p1': 'Bonjour, j\'ai créé cet outil en complément de mon app <a href="https://arm3l.github.io/fbi-data/" rel="noopener"><strong>Fake Book Index</strong></a>. L\'app vous indique la page exacte d\'un standard dans votre fake book, mais les scans PDF ont presque toujours un décalage (couverture, préface, index avant la page 1).',
@@ -1010,6 +1031,9 @@
     },
     en: {
       'brand.tool_link': 'A FBI tool',
+      'footer.fbi': 'Fake Book Index',
+      'footer.title': 'PDF Repaginator',
+      'footer.built_by': 'built by',
       'header.title': 'PDF Repaginator',
       'header.subtitle': 'Page labelling for Real Book scans.',
       'intro.p1': 'Hi, I built this tool as a companion to my app <a href="https://arm3l.github.io/fbi-data/" rel="noopener"><strong>Fake Book Index</strong></a>. FBI tells you the exact page of a standard in your fake book, but PDF scans almost always have an offset (cover, preface and index sitting before page 1).',
